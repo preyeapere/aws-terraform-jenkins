@@ -35,11 +35,12 @@ terraform init
      terraform apply --auto-approve
 
      
-put you public ip 13.60.86.106:8080 on your browser
+put you public ip on your browser
 
-SSH to your machinessh -i "gold.pem" ubuntu@13.60.86.106
+SSH to your machine ssh -i "gold.pem" ubuntu@13.60.86.106
 
 when inside the machine run 
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 Paste the Password into the jenkin browser
+

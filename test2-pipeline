@@ -1,0 +1,20 @@
+pipeline{
+    agent any
+    stages{
+        stage ("welcome to environment"){
+            steps{
+                sh'printenv'
+            }
+        }
+        stage ("welcome to git environment"){
+            steps{
+                sh'git version'
+            }
+        }
+        stage ("welcome to stage 3"){
+            steps{
+                sh'echo "my name is preye apere"'
+            }
+        }
+    }
+}
